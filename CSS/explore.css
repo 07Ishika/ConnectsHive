@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:linear-gradient(#fdf2f2,#9ff9f1ae);
+ font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; /* Align items at the top */
+      margin: 0;
+   }
+  
+   .container{
+      width:1000px;
+      display: inline-block;
+      margin-left: 150px;
+      background: linear-gradiend(#fff,#ff994f);
+    }
+section{
+  margin: 20px;
+  padding: 10px;
+}
+.progress-container {
+  text-align: center;
+  width: 100%;
+}
+strong{
+  color: #fe5151ea;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  cursor: pointer;
+}
+
+.step .number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.step p {
+  margin: 0;
+  font-size: 20px;
+  color: #555;
+}
+
+.progress-segment {
+  width: 20%;
+  height: 5px;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.progress-segment.completed {
+  background-color: #00bcd4;
+}
+
+.step.completed .number {
+  background:linear-gradient(270deg,#ff994f,#fa6d86);
+  color: #fff;
+}
+
+.step.active .number {
+  background-color: #00bcd4;
+  color: #fff;
+}
+.container{
+  display: inline-block;
+  background: linear-gradiend(#fff,#ff994f);
+}
+.sectionTitle{
+    width: 300px;
+   border-bottom: 3px solid #ff4f4f;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0px;
+    text-transform: uppercase;
+
+}
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background:linear-gradient(270deg,#ff994f,#fa6d86);
+    position: absolute;
+    left:calc(50% - 10px);
+    top:calc(75% - 62px);
+    transform: rotate(45deg) translate(50px,50px);
+    border: 3px solid #fff;
+}
+
+.donateImp{
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}
+.donateImp .videoPlayer{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  height: 700px;
+  transform: translate(-50%,-50%);
+  margin-top: 110px;
+}
+.donateImp .sectiontitle{
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+}
+
+.donateImp .videoPlayer source{
+    background-color: rgba(0,0,0,0.8);
+}
+.donateImp .donationContainer{
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.67); /* Semi-transparent black */
+  color: #ffffff;
+  width: 620px;
+  padding: 20px; /* Add padding for better readability */
+  top: 50%; /* Center vertically */
+  left: 40%; /* Shift slightly to the left */
+  transform: translate(-50%, -50%); /* Center the container relative to its position */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for better focus */
+  border-radius: 8px; /* Rounded corners for aesthetic */
+}
+  /* Donation Section Ends */

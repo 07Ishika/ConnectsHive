@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Progress</title>
+    <link rel="stylesheet" href="../CSS/explore.css">
+</head>
+<body>
+    <div class="container">
+        <section class="progresss">
+            <div class="progress-container">
+              
+                    <h1>Tracking the Progress Of Giving</h1>
+            </div>
+                <div class="progress-bar">
+                    <div class="step" onclick="updateProgress(1)">
+                        <span class="number">1</span>
+                        <p>Logged In</p>
+                    </div>
+                    <div class="progress-segment"></div>
+                    <div class="step" onclick="updateProgress(2)">
+                        <span class="number">
+                            <a href="../index.html#causes">2</a>
+                        </span>
+                        <p>Selected cause to support</p>
+                    </div>
+                    <div class="progress-segment"></div>
+                    <div class="step" onclick="updateProgress(3)">
+                        <span class="number">
+                            <a href="../HTML/slot.html">3</a>
+                        </span>
+                        <p>Booked Slot</p>
+                    </div>
+                    <div class="progress-segment"></div>
+                    <div class="step" onclick="updateProgress(4)">
+                        <span class="number">4</span>
+                        <p>Submitted Affirmation Form</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!---- Why to Donate Section Starts ---->
+    <div class="container">
+        <section class="donateImp" id="donationImpSection">
+        
+            <h3 class="sectionTitle">Donation</h3>
+            <video autoplay muted loop class="videoPlayer">
+                <source src="../Assets/istockphoto-2172519479-640_adpp_is.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="donationContainer">
+                <h2><strong>daanam paramam sukham-</strong>Giving is Supreme Happiness</h2>
+                <p>The Gita emphasizes that true giving, performed without attachment or expectation, 
+                    brings inner peace and uplifts both the giver and receiver. Such charity, called sattvic daan, 
+                    fosters spiritual growth and fulfills one’s duty (dharma). 
+                    By helping others, we transcend selfishness, connect with humanity, 
+                    and find lasting happiness through selfless action. This phrase beautifully highlights
+                     that generosity is not just a virtue but a source of profound joy.</p>
+            </div>
+        </section>
+    </div>
+    <script src="../JS/explore.js"></script>
+</body>
+</html>
